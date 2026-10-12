@@ -171,7 +171,7 @@ namespace math {
 
 
 
-#ifdef __APPLE__
+#if defined(__APPLE__) && !defined(_LIBCPP_VERSION)
 #include <algorithm>
 
 namespace std {
